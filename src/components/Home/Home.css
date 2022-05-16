@@ -1,4 +1,42 @@
 
+
 .my-classes {
     background-color: gainsboro;
+    
+}
+
+.btn {
+    font-family: monospace;
+}
+
+.fav-classes {
+    
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.add-fav {
+    border-right: 2px solid hsl(0, 0%, 0%);
+    animation: typewriter 2.5s steps(45) normal, blinkTextCursor .8s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: hsl(0, 0%, 0%);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }

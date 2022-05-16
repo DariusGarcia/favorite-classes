@@ -1,5 +1,15 @@
 .class {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    border: 1000px;
+    margin: 2px;
+    border-color: white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+    color: white;
+    font-weight: bold;
+    width: 20vw;
+    height: 20vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);;
+
 }

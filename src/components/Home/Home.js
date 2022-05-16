@@ -24,11 +24,11 @@ function Home(props) {
 
     return (
         <div> 
-            <h1>Hello World!</h1>
+            <h1 className="fav-classes">Favorite Classes</h1>
             <form onSubmit={handleSubmit}>
                 <label> Add Favorite Class </label>
                 <input type="text" value={value} onChange={handleChange}></input>
-                <button type="submit">Add Class!</button>
+                <button className="btn" type="submit">Add Class!</button>
             </form>
             <div className="my-classes">
                 {favoriteClasses.map((favClass) => 
