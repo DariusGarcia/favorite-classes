@@ -1,5 +1,7 @@
 import "./Class.css";
 import React, {useState, useEffect} from 'react'
+import { RiCloseCircleLine} from 'react-icons/ri'
+
 
 function ClassGraphQL(props) {
 
@@ -7,7 +9,7 @@ function ClassGraphQL(props) {
 
     const url = "https://api.peterportal.org/graphql"
 
-
+    
 
     useEffect( () => {
         const fetchData = async () => {
@@ -57,7 +59,7 @@ function ClassGraphQL(props) {
     } else {
         info = <p>Loading...</p>
     }
-    
+
 
     return (
         <div className="class">

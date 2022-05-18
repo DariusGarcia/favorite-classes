@@ -3,6 +3,7 @@ import ClassGraphQL from "../Class/ClassGraphQL";
 import "./Home.css";
 
 
+
 function Home(props) {
 
     const [value, setValue] = useState('');
@@ -28,10 +29,8 @@ function Home(props) {
         console.log(favoriteClasses);
     }
 
-    window.onload = function() {
-        document.getElementById("input").focus();
-      };
-
+    
+   
     return (
         <div>
             <header className="header">
@@ -47,11 +46,14 @@ function Home(props) {
                     <button className="btn" type="submit">Add class #{favoriteClasses.length + 1}</button>
                 </div>
             </form>
+
             <div className="classes-container">
                 {favoriteClasses.map((favClass) =>
-                    <ClassGraphQL name={favClass} key={favClass}></ClassGraphQL>
+                    <ClassGraphQL name={favClass} key={favClass}></ClassGraphQL>,
                 )}
+                
             </div>
+            
         </div>
 
     )
