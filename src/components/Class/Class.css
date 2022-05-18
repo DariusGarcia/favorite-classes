@@ -13,15 +13,11 @@
     min-height: 20vh;
     min-width: 20vw;
     /* place-items: start; */
-    background-image: linear-gradient(to right, #373a3b, #414345);
-    
+    background-color: black;
+    background-image: linear-gradient(45deg, #282f31, #2790d6);
+    /*#2790d6  */
 
 }
-
-.class-h1 {
-    color: black;
-}
-
 
 .class:hover {
     transform: scale(0.99);
@@ -36,7 +32,7 @@
 
 
 .class-title {
-    color: #00c6ff;
+    color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     text-align: center;

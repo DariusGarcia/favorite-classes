@@ -46,7 +46,9 @@
 
 .classes-container {
     width: 100%;
-    background-color: #272727;
+    /* background-color: #272727; */
+    background-color: none;
+    
     display: flex;
     flex-wrap: wrap;
     place-content: center;

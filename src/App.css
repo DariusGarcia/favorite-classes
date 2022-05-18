@@ -6,13 +6,31 @@
   font-family: Montserrat;
   width: 75%;
   min-height: 800px;
-  background: #272727;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #303841 0%, #11151a 74%);;
   
   /* text-align: center; */
   margin: 50px auto;
   border-radius: 30px 30px 50px 50px;
   padding-bottom: 32px;
+  background-size: 400% 400%;
+	animation: bg-gradient 15s ease infinite;
+	height: 5vh;
+    
 }
+
+@keyframes bg-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .App-logo {
   height: 40vmin;
