@@ -1,21 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .class {
-    border: 1000px;
-    margin: 2px;
+    font-size: 12px;
+    padding-top: 20px;
+    margin: 10px 10px;
     border-color: white;
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
+    border-radius: 25px;
+    font-family: Montserrat;
     color: white;
-    font-weight: bold;
-    width: 20vw;
-    height: 20vh;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);;
+    width: auto;
+    height: auto;
+    min-height: 20vh;
+    min-width: 20vw;
+    
+    background-image: linear-gradient(to right, #373a3b, #414345);
+    
 
 }
+
+.class-h1 {
+    color: black;
+}
+
 
 .class:hover {
     opacity: 0.9;
-    transform: scale(0.98);
+    transform: scale(0.99);
+    border: 2px solid #00c6ff;
 }
+
+.information {
+    padding: 10px;
+    place-items: center;
+}
+
+.class-title {
+    color: #00c6ff;
+    font-weight: bold;
+}
+

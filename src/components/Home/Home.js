@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Class from "../Class/Class";
+import React, { useState } from 'react';
+import ClassGraphQL from "../Class/ClassGraphQL";
 import "./Home.css";
 
 
@@ -12,32 +12,48 @@ function Home(props) {
         setValue(event.target.value);
     }
 
+    const changeCase = (event) => {
+        event.preventDefault();
+        setValue(event.target.value.toUpperCase());
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         if (!favoriteClasses.includes(value)) {
             setClasses(favoriteClasses.concat(value));
             setValue('');
         }
+
+
         console.log(favoriteClasses);
     }
 
+    window.onload = function() {
+        document.getElementById("input").focus();
+      };
 
     return (
-        <div> 
-            <h1 className="fav-classes">Favorite Classes</h1>
+        <div>
+            <header className="header">
+                <h1 className="fav-classes">Favorite Classes</h1>
+            </header>
+
             <form onSubmit={handleSubmit}>
-                <label> Add Favorite Class </label>
-                <input type="text" value={value} onChange={handleChange}></input>
-                <button className="btn" type="submit">Add Class!</button>
+                <label className="add-fav"> Enter Favorite Class: </label>
+                <input type="text" value={value} onChange={handleChange} className="class-input" id="input"
+                    onInput={(e) => e.target.value = ("" + e.target.value).toUpperCase()}>
+                </input>
+                <button className="btn" type="submit">Add class #{favoriteClasses.length + 1}</button>
             </form>
-            <div className="my-classes">
-                {favoriteClasses.map((favClass) => 
-                    <Class name={favClass} key={favClass}></Class>
-                )}     
+            <div className="classes-container">
+                {favoriteClasses.map((favClass) =>
+                    <ClassGraphQL name={favClass} key={favClass}></ClassGraphQL>
+                )}
             </div>
         </div>
 
     )
+    
 }
 
 export default Home;
