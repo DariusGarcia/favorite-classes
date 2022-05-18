@@ -39,11 +39,13 @@ function Home(props) {
             </header>
 
             <form onSubmit={handleSubmit}>
-                <label className="add-fav"> Enter Favorite Class: </label>
-                <input type="text" value={value} onChange={handleChange} className="class-input" id="input"
-                    onInput={(e) => e.target.value = ("" + e.target.value).toUpperCase()}>
-                </input>
-                <button className="btn" type="submit">Add class #{favoriteClasses.length + 1}</button>
+                <div className="form">
+                    <label className="add-fav"> Enter Favorite Class: </label>
+                    <input type="text" value={value} onChange={handleChange} className="class-input" id="input"
+                        onInput={(e) => e.target.value = ("" + e.target.value).toUpperCase()}>
+                    </input>
+                    <button className="btn" type="submit">Add class #{favoriteClasses.length + 1}</button>
+                </div>
             </form>
             <div className="classes-container">
                 {favoriteClasses.map((favClass) =>

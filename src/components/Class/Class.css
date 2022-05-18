@@ -12,7 +12,7 @@
     height: auto;
     min-height: 20vh;
     min-width: 20vw;
-    
+    /* place-items: start; */
     background-image: linear-gradient(to right, #373a3b, #414345);
     
 
@@ -24,18 +24,46 @@
 
 
 .class:hover {
-    opacity: 0.9;
     transform: scale(0.99);
     border: 2px solid #00c6ff;
 }
 
 .information {
     padding: 10px;
-    place-items: center;
+    display: grid;
+    
 }
+
 
 .class-title {
     color: #00c6ff;
     font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
+
+
+.class-title-p {
+    color:#2e8cff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+}
+.class-department {
+    color:#2e8cff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.class-description {
+    color:#2e8cff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.class-info-p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-spacing: 2px;
+}

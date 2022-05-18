@@ -20,8 +20,11 @@
 	height: 5vh;
     cursor: default;
     font-family: montserrat;
+    text-align: center;
     
 }
+
+
 
 @keyframes gradient {
 	0% {
@@ -33,6 +36,11 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.form {
+    padding: 20px;
+    text-align: center;
 }
 
 
@@ -50,6 +58,7 @@
 
 .fav-classes {
     color: white;
+    
 }
 
 .btn {
@@ -95,6 +104,7 @@
     color: white;
     font-weight: bold;
     font-size: 15px;
+    letter-spacing: 2px;
 }
 
 .class-input {
@@ -111,3 +121,4 @@
 .class-input:hover {
     border: 2px solid black;
 }
+

@@ -39,11 +39,17 @@ function ClassGraphQL(props) {
     let info;
 
     if (classInfo) {
-        info = <div className="information">
-            <p className="class-title-p">Class Title:</p><p id="title">{classInfo.title} </p>
-            <p id="department">Department: {classInfo.department_name}</p>
-            <p  id="description">Description: {classInfo.description}</p>
-        </div>
+        info = <div className="info-div">
+                    <div className="first">
+                        <p className="class-title-p">Class Title:</p><p className="class-info-p"id="title">{classInfo.title} </p>
+                    </div>
+                    <div className="second">
+                        <p className="class-department" id="department">Department:</p> <p className="class-info-p">{classInfo.department_name}</p>
+                    </div>
+                    <div className="third">
+                        <p className="class-description" id="description">Description:</p> <p className="class-info-p">{classInfo.description}</p>
+                    </div>
+                </div>
 
 
     } else if (classInfo == null) {
@@ -58,7 +64,7 @@ function ClassGraphQL(props) {
             <div className="class-title">
                 {props.name}
             </div>
-            <div>
+            <div  className="information">
                 {info}
             </div>
         </div>
