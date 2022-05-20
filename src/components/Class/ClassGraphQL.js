@@ -1,3 +1,4 @@
+
 import "./Class.css";
 import React, {useState, useEffect} from 'react'
 import { RiCloseCircleLine} from 'react-icons/ri'
@@ -8,8 +9,6 @@ function ClassGraphQL(props) {
     const [classInfo, setClassInfo] = useState({})
 
     const url = "https://api.peterportal.org/graphql"
-
-    
 
     useEffect( () => {
         const fetchData = async () => {
@@ -33,7 +32,6 @@ function ClassGraphQL(props) {
             const data = await response.json();
             console.log(data);
             setClassInfo(data.data.course);
-
         }
         fetchData();
     }, [props.name]);
@@ -43,16 +41,15 @@ function ClassGraphQL(props) {
     if (classInfo) {
         info = <div className="info-div">
                     <div className="first">
-                        <p className="class-title-p">Class Title:</p><p className="class-info-p"id="title">{classInfo.title} </p>
+                        <p className="class-titles-p">Class Title:</p><p className="class-info-p"id="title">{classInfo.title} </p>
                     </div>
                     <div className="second">
-                        <p className="class-department" id="department">Department:</p> <p className="class-info-p">{classInfo.department_name}</p>
+                        <p className="class-titles-p" id="department">Department:</p> <p className="class-info-p">{classInfo.department_name}</p>
                     </div>
                     <div className="third">
-                        <p className="class-description" id="description">Description:</p> <p className="class-info-p">{classInfo.description}</p>
+                        <p className="class-titles-p" id="description">Description:</p> <p className="class-info-p">{classInfo.description}</p>
                     </div>
                 </div>
-
 
     } else if (classInfo == null) {
         info = <p id="class-nf">Class Not Found...</p>

@@ -25,13 +25,13 @@ function Home(props) {
             setValue('');
         }
 
-
         console.log(favoriteClasses);
     }
 
     
    
     return (
+
         <div>
             <header className="header">
                 <h1 className="fav-classes">Favorite Classes</h1>
@@ -51,13 +51,9 @@ function Home(props) {
                 {favoriteClasses.map((favClass) =>
                     <ClassGraphQL name={favClass} key={favClass}></ClassGraphQL>,
                 )}
-                
             </div>
-            
         </div>
-
     )
-    
 }
 
 export default Home;

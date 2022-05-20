@@ -5,6 +5,7 @@
   max-height: 100%; */
   font-family: Montserrat;
   width: 75%;
+
   min-height: 800px;
   background-color: #485461;
   background-image: linear-gradient(315deg, #303841 0%, #11151a 74%);;
@@ -15,7 +16,7 @@
   padding-bottom: 32px;
   background-size: 400% 400%;
 	animation: bg-gradient 15s ease infinite;
-	height: 5vh;
+	height: auto;
     
 }
 
