@@ -8,4 +8,4 @@ This web app utilizes React, GraphQL, and UCI's Peter Portal courses API.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/gallery/moUJmbb' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/xbSqLgT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
