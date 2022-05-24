@@ -6,6 +6,7 @@ Favorite Classes is a web app that allows users to add their favorite UC Irvine 
 
 This web app utilizes React, GraphQL, and UCI's Peter Portal courses API. 
 
+
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/xbSqLgT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[https://imgur.com/xbSqLgT](https://imgur.com/xbSqLgT)
